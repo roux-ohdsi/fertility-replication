@@ -96,3 +96,16 @@ gestational_htn = c(441922) # This is the direct mapping from ICD9 - but looks l
 # How to ID 140 gestational days?
 # Phenotype library for Pregnancy?
 
+# ======================== Next Steps: 
+
+# Map  CPT codes pertaining to ART or ART in Supplemental Table 2. 
+
+cpt_tx <- 
+  c("58321", "58322", "S4017", "S4020", "S4021", "89254", "58970",
+    "76948", "S4042", "89290", "89291", "S4015", "S4011", "89342",
+    "89255", "58974", "89250", "89251", "89268", "89272", "89354",
+    "89356", "S4037", "89352", "89258", "S4016", "S4018", "S4022",
+    "89280", "89281")
+
+tx_omop_codes <- map2omop(con, cdm_schema, codes = cpt_tx, translate_from = c("CPT4", "HCPCS")) |> 
+  mutate(treatment = c("IUI", "IUI", rep("ART", (length(cpt_tx)-2))))

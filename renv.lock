@@ -1122,7 +1122,7 @@
       "RemoteRepo": "ohdsilab",
       "RemoteUsername": "roux-ohdsi",
       "RemoteRef": "HEAD",
-      "RemoteSha": "e06fa5a492f1327ac3f5bade811e1a07ce1379a3",
+      "RemoteSha": "c0fe9508cfcad6500fff2bb5e3eff84ba358ad93",
       "Requirements": [
         "DatabaseConnector",
         "dplyr",
@@ -1135,7 +1135,7 @@
         "tidyr",
         "tidytext"
       ],
-      "Hash": "d9a21469d0ea1df815349d83355f54db"
+      "Hash": "4edf64819ef341558207d0c7d0a9262b"
     },
     "openssl": {
       "Package": "openssl",
