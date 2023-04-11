@@ -90,3 +90,9 @@ gdm_condition_2 = c(4162865, 76751001, 201820) # 648.0x maps to 76751001 "Diabet
 preeclampsia    = c(439393) # must occur 2x in the inpatient record. 624.4x-642.7x ICD codes - maybe best to just go with the general concept from OMOP? needs manual review.
 gestational_htn = c(441922) # This is the direct mapping from ICD9 - but looks like it might be good to look up the hierarchy. review. 
 # Note: "Women who met the criteria of both preeclampsia and gestational hypertension were classified as preeclampsia"
+
+# ======================== To Discuss
+
+# How to ID 140 gestational days?
+# Phenotype library for Pregnancy?
+
